@@ -114,7 +114,7 @@ class Superheroe:
     def fight_attack(self,defender,round):
         defender.fight_defense(self.movimientos[round].get_daño())
 
-    def fight_attack(self,daño):
+    def fight_defense(self,daño):
         self.stamina = self.stamina - daño
         if self.stamina<=0:
             self.die
